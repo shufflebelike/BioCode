@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BioCode Gel — synthetic genomics platform demo website." />
+  <title>BioCode</title>
+  <link rel="icon" type="image/PNG" href="icon.PNG"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  A Website By Shuffle
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <div class="dna dna-a" aria-hidden="true"></div>
+  <div class="dna dna-b" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="BioCode home">
+      <img src="logo.jpg" alt="BioCode logo" />
+      <span>BioCode<span class="accent">.</span></span>
+    </a>
+
+    <nav class="nav" id="mainNav">
+      <a href="#home" data-i18n="navHome">Home</a>
+      <a href="#platform" data-i18n="navPlatform">Platform</a>
+      <a href="#industries" data-i18n="navIndustries">Industries</a>
+      <a href="#licensing" data-i18n="navLicensing">Licensing</a>
+      <a href="#vis" data-i18n="navVis">Vision for Future</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="lang-btn" id="langToggle" type="button">
+        <span>EN</span><span class="lang-divider">/</span><span>FA</span>
+      </button>
+      <a class="header-cta" href="#licensing" data-i18n="navGetStarted">Get Started</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span><span data-i18n="heroEyebrow">SYNTHETIC GENOMICS PLATFORM</span></div>
+        <h1><span data-i18n="heroTitle1">Program your</span> <span class="gradient-text" data-i18n="heroTitle2">material.</span><br><span data-i18n="heroTitle3">Build the next market.</span></h1>
+        <p data-i18n="heroText">BioCode Gel turns one stable hydrogel matrix into a programmable platform. Change the ssDNA sequence and unlock new chemical, electrical, or biological properties.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#licensing" data-i18n="heroBtn1">Explore Licenses <span>↗</span></a>
+          <a class="btn ghost" href="#platform" data-i18n="heroBtn2">See the Platform</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>01</strong><span data-i18n="stat1">Stable hydrogel matrix</span></div>
+          <div><strong>02</strong><span data-i18n="stat2">Programmable ssDNA</span></div>
+          <div><strong>03</strong><span data-i18n="stat3">Multiple B2B pathways</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbital-card">
+          <div class="scanline"></div>
+          <div class="code-label">BIOCODE // GEL_01</div>
+          <div class="dna-art">
+            <span class="strand s1"></span><span class="strand s2"></span>
+            <i class="node n1"></i><i class="node n2"></i><i class="node n3"></i><i class="node n4"></i>
+            <i class="node n5"></i><i class="node n6"></i>
+            <b class="rung r1"></b><b class="rung r2"></b><b class="rung r3"></b><b class="rung r4"></b>
+          </div>
+          <div class="sequence">ATG · CGA · TTA · GGC · ACG · CTA</div>
+          <div class="visual-footer"><span>SSDNA</span><span>MXENE</span><span>HYDROGEL</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro" id="platform">
+      <div class="section-heading">
+        <span class="section-index">01 / PLATFORM</span>
+        <h2 data-i18n="platformTitle">One matrix. <span>Endless applications.</span></h2>
+        <p data-i18n="platformText">The platform adapts to the industrial vision of researchers, medical startups, and independent bio-entrepreneurs by modifying the DNA code embedded in the material.</p>
+      </div>
+
+      <div class="flow">
+        <div class="flow-card"><span>01</span><div class="flow-icon">⌬</div><h3 data-i18n="flow1Title">Global market</h3><p data-i18n="flow1Text">Identify the industry and the problem you want to solve.</p></div>
+        <div class="flow-line"></div>
+        <div class="flow-card"><span>02</span><div class="flow-icon">⟲</div><h3 data-i18n="flow2Title">Custom DNA</h3><p data-i18n="flow2Text">Modify the ssDNA sequence to program new material behavior.</p></div>
+        <div class="flow-line"></div>
+        <div class="flow-card"><span>03</span><div class="flow-icon">▣</div><h3 data-i18n="flow3Title">Commercial product</h3><p data-i18n="flow3Text">Deploy the resulting material in a product pathway.</p></div>
+      </div>
+    </section>
+
+    <section class="section industries" id="industries">
+      <div class="section-heading compact">
+        <span class="section-index">02 / INDUSTRIES</span>
+        <h2 data-i18n="industryTitle">From DNA code to <span>commercial output.</span></h2>
+      </div>
+
+      <div class="industry-grid">
+        <article class="industry-card">
+          <div class="industry-top"><span class="industry-number">01</span><span class="industry-icon">✚</span></div>
+          <h3 data-i18n="medTitle">MedTech & Point-of-Care</h3>
+          <p data-i18n="medDNA">Replace default ssDNA with a highly selective, disease-targeting aptamer.</p>
+          <div class="product-chip" data-i18n="medProduct">Colorimetric smart wound patches</div>
+          <small data-i18n="medBuyer">Medical device manufacturers, biotech startups & dermatological clinics.</small>
+        </article>
+
+        <article class="industry-card">
+          <div class="industry-top"><span class="industry-number">02</span><span class="industry-icon">◈</span></div>
+          <h3 data-i18n="robotTitle">Soft Robotics & AI Skins</h3>
+          <p data-i18n="robotDNA">Tune DNA chain configuration and density to optimize MXene electron mobility.</p>
+          <div class="product-chip" data-i18n="robotProduct">Self-healing electronic skins</div>
+          <small data-i18n="robotBuyer">Industrial automation labs, drone manufacturers & VR hardware developers.</small>
+        </article>
+
+        <article class="industry-card">
+          <div class="industry-top"><span class="industry-number">03</span><span class="industry-icon">⌁</span></div>
+          <h3 data-i18n="greenTitle">Green Tech & Filtration</h3>
+          <p data-i18n="greenDNA">Encode DNA sequences for strong affinity to toxic heavy-metal ions.</p>
+          <div class="product-chip" data-i18n="greenProduct">Zero-power bio-filtration membranes</div>
+          <small data-i18n="greenBuyer">Chemical refineries, textile plants & municipal wastewater firms.</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="section workshop">
+      <div class="workshop-copy">
+        <span class="section-index">03 / WORKSHOP MODEL</span>
+        <h2 data-i18n="workshopTitle">The factory is <span>in your mind.</span></h2>
+        <p data-i18n="workshopText">BioCode Gel is designed around a simple manufacturing architecture that can support researchers, independent engineers, and localized specialist workshops.</p>
+        <div class="bullet-list">
+          <div><span>+</span><p data-i18n="workshop1">Students & independent researchers can build a low-overhead startup after university.</p></div>
+          <div><span>+</span><p data-i18n="workshop2">Independent engineers and biohackers can establish boutique workshops for regional industries.</p></div>
+        </div>
+      </div>
+      <div class="terminal">
+        <div class="terminal-bar"><span></span><span></span><span></span><label>biocode_protocol.sh</label></div>
+        <pre><code><em>$</em> initialize biocode-gel
+<em>&gt;</em> matrix: stable_hydrogel
+<em>&gt;</em> input: ssDNA_sequence
+<em>&gt;</em> environment: ambient
+<em>&gt;</em> automation: none
+
+<span class="ok">[OK]</span> protocol loaded
+<span class="ok">[OK]</span> matrix stabilized
+<span class="ok">[OK]</span> application unlocked
+
+<em>$</em> deploy --industry=custom</code></pre>
+      </div>
+    </section>
+
+    <section class="section licensing" id="licensing">
+      <div class="section-heading">
+        <span class="section-index">04 / LICENSING</span>
+        <h2 data-i18n="licenseTitle">Choose your <span>access model.</span></h2>
+        <p data-i18n="licenseText">Three licensing paths separate independent researchers, academic labs, and commercial R&D teams.</p>
+      </div>
+
+      <div class="tiers">
+        <article class="tier">
+          <div class="tier-head"><span class="tier-tag">TIER 01</span><span class="tier-symbol">01</span></div>
+          <h3 data-i18n="tier1Title">Independent Scholar & Innovator</h3>
+          <p class="tier-target" data-i18n="tier1Target">For students, independent scientists & researchers.</p>
+          <ul>
+            <li data-i18n="tier1a">Lifetime digital access to the 5-part BioCode Academy.</li>
+            <li data-i18n="tier1b">Step-by-step PDF synthesis manual.</li>
+            <li data-i18n="tier1c">Open-source DNA modification guide for initial testing.</li>
+            <li data-i18n="tier1d">Official BioCode Gel Academic Certificate.</li>
+          </ul>
+          <div class="price" data-i18n="priceRegional">Regional price — contact seller</div>
+          <button class="tier-btn seller-btn" data-tier="Tier 1" data-i18n="tierCTA">Contact seller ↗</button>
+        </article>
+
+        <article class="tier featured">
+          <div class="tier-head"><span class="tier-tag">TIER 02</span><span class="tier-symbol">02</span></div>
+          <h3 data-i18n="tier2Title">Institutional & University Lab</h3>
+          <p class="tier-target" data-i18n="tier2Target">For professors, PIs & academic research groups.</p>
+          <ul>
+            <li data-i18n="tier2a">Platform seats for the PI + up to 5 student researchers.</li>
+            <li data-i18n="tier2b">Raw FTIR, SEM & tensile-test dataset documentation.</li>
+            <li data-i18n="tier2c">Institutional co-branding rights.</li>
+          </ul>
+          <div class="price" data-i18n="priceInternational">International price — contact seller</div>
+          <button class="tier-btn seller-btn" data-tier="Tier 2" data-i18n="tierCTA">Contact seller ↗</button>
+        </article>
+
+        <article class="tier">
+          <div class="tier-head"><span class="tier-tag">TIER 03</span><span class="tier-symbol">03</span></div>
+          <h3 data-i18n="tier3Title">Corporate R&D & Tech Transfer</h3>
+          <p class="tier-target" data-i18n="tier3Target">For SMEs, medical-device companies & consultancies.</p>
+          <ul>
+            <li data-i18n="tier3a">Commercial deployment rights for customized products.</li>
+            <li data-i18n="tier3b">Five private virtual integration sessions.</li>
+            <li data-i18n="tier3c">Priority access to the global DNA-code database.</li>
+          </ul>
+          <div class="price" data-i18n="priceCorporate">Corporate price — contact seller</div>
+          <button class="tier-btn seller-btn" data-tier="Tier 3" data-i18n="tierCTA">Contact seller ↗</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section vis-section" id="vis">
+      <div class="section-heading compact">
+        <span class="section-index">05 / Vision for Future</span>
+        <h2 data-i18n="vistitle">BioCode™: Strategic Vision 2040 and Beyond</h2>
+        <h3 data-i18n="vishead">The Grand Thesis</h3>
+      <p data-i18n="vistext">Silicon architectures are hitting a rigid physical limit. The future of global industry requires systems that do not merely interface with the biological and environmental worlds, but compute with them [finance]. By establishing single-stranded DNA (ssDNA-MB) as a structural, responsive mechanical engine—rather than a passive sensor—BioCode™ has secured the physical layer of the upcoming Bio-Digital Economy.</p>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div>
+        <span class="section-index">06 / CONTACT</span>
+        <h2 data-i18n="contactTitle">Ready to <span>talk science?</span></h2>
+        <p data-i18n="contactText">This demo does not process payments. Your selected license can be passed to the seller/contact channel instead.</p>
+      </div>
+      <button class="btn primary seller-btn" data-tier="General inquiry" data-i18n="contactBtn">Contact the seller ↗</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="brand footer-brand"><img src="logo.jpg" alt=""><span>BioCode<span class="accent">.</span></span></div>
+    <p>© 2026 BioCode Gel — Synthetic Genomics Platform</p>
+    <p>Website desingned and engineered by Shuffle </p>
+    <div><a href="#home">↑</a></div>
+  </footer>
+
+  <div class="modal" id="sellerModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <span class="section-index">SELLER CONTACT</span>
+      <h3 id="modalTitle">Contact seller</h3>
+      <p data-i18n="modalText">In the real version, this button can redirect to the seller's preferred email, Telegram, WhatsApp, or inquiry page. For now, this is a demo.</p>
+      <div class="seller-placeholder">
+        <span>CONTACT CHANNEL</span>
+        <strong>elhamgenetic@gmail.com</strong>
+      </div>
+      <button class="btn primary" id="copySeller" data-i18n="copyContact">Copy contact</button>
+      <p class="copy-status" id="copyStatus"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
